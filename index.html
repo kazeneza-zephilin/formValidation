@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <script type="module" src="main.js"></script>
+        <title>custom form</title>
+    </head>
+    <body>
+        <section class="form-container">
+            <div class="form-title">
+                <h2>sign up form </h2>
+            </div>
+            <form action="#" novalidate>
+                <p class="input-field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" minlength="8" required autofocus />
+                    <div class="email-error"></div>
+                </p>
+                <div class="separator"></div>
+                <p class="input-field">
+                    <label for="country">Select a country</label>
+                    <select  name="country" id="country"  required>
+                        <option value="default" disabled selected> select country ---</option>>
+                    </select>
+                    <div class="country-error"></div>
+                </p>
+                <div class="separator"></div>
+                <p class="input-field">
+                    <label for="Zip-code">zip code</label>
+                    <input type="text" name="zip-code" id="zip-code" />
+                    <div class="zip-code-error"></div>
+                </p>
+                <div class="separator"></div>
+                <p class="input-field">
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password" minlength="6"/>
+                    <div class="psswd-error"></div>
+                </p>
+                <div class="separator"></div>
+                <p class="input-field">
+                    <label for="confirm-psswd">Confirm password</label>
+                    <input
+                        type="password"
+                        name="confirm-psswd"
+                        id="confirm-psswd"
+                    />
+                    <div class="confirm-psswd-error"></div>
+                </p>
+
+                <div class="submit-btn">
+                    <button type="submit">submit</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
